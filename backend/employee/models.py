@@ -25,4 +25,4 @@ class Employee(AbstractUser):
     user_permissions    = None
 
     def __str__(self):
-        return self.username
+        return f'{self.username} - {self.first_name} - {self.last_name} - {self.role}'
